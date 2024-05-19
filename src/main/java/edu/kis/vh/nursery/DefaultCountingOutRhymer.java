@@ -6,7 +6,7 @@ public class DefaultCountingOutRhymer {
     public static final int TABLE_LEN = 12;
     private final int[] numbers = new int[TABLE_LEN];
 
-    public int total = INITIAL_VALUE;
+    private int total = INITIAL_VALUE;
 
     public void countIn(int in) {
         if (!isFull())
@@ -32,5 +32,4 @@ public class DefaultCountingOutRhymer {
             return INITIAL_VALUE;
         return numbers[total--];
     }
-
 }
