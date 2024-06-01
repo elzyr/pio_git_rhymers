@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+//all 5 tests passed
 public class RhymersJUnitTest {
 
     public static final int initTestValue = 4;
