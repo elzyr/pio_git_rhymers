@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+//all 5 tests passed
 public class RhymersJUnitTest {
 
     public static final int initTestValue = 4;
@@ -49,6 +50,7 @@ public class RhymersJUnitTest {
     @Test
     public void testPeekaboo() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
+        // TODO: EMPTY_STACK_VALUE variable is redundant
         final int EMPTY_STACK_VALUE = emptyStackValue;
 
         int result = rhymer.peekaboo();

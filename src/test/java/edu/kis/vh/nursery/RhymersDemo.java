@@ -13,14 +13,20 @@ class RhymersDemo {
 
     public static void main(String[] args) {
         Rhymersfactory factory = new DefaultRhymersFactory();
-        
+
+        testRhymers(factory);
+
+    }
+
+    private static void testRhymers(Rhymersfactory factory) {
         final DefaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
                 factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
-        
+
+        // TODO: for loops can be replaced with enhanced version
         for (int i = loopInitVariable; i < loopFinalVariable; i++)
             for (int j = secondLoopInitVariable; j < rhymesLimit; j++)
                 rhymers[j].countIn(i);
-        
+
         final java.util.Random rn = new java.util.Random();
         for (int i = loopInitVariable; i < loopFinalVariable; i++)
             rhymers[rhymesLimit].countIn(rn.nextInt(bound));
@@ -30,10 +36,9 @@ class RhymersDemo {
                 System.out.print(rhymers[i].countOut() + "  ");
             System.out.println();
         }
-        
+
         System.out.println("total rejected is "
                 + ((HanoiRhymer) rhymers[rhymesLimit]).reportRejected());
-        
     }
-    
+
 }
