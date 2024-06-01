@@ -4,6 +4,8 @@ public class IntLinkedList {
 
     private static final int EMPTY = -1;
     private Node last;
+
+    // TODO: field 'i' is never used, consider deleting it
     private int i;
 
     public void push(int i) {
@@ -20,6 +22,7 @@ public class IntLinkedList {
         return last == null;
     }
 
+    // TODO: implement method isFull (it shouldn't always return false)
     public boolean isFull() {
         return false;
     }

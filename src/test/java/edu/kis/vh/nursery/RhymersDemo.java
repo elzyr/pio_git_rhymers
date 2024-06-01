@@ -22,6 +22,7 @@ class RhymersDemo {
         final DefaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
                 factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
 
+        // TODO: for loops can be replaced with enhanced version
         for (int i = loopInitVariable; i < loopFinalVariable; i++)
             for (int j = secondLoopInitVariable; j < rhymesLimit; j++)
                 rhymers[j].countIn(i);
